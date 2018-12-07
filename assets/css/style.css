@@ -5,7 +5,10 @@ body {
   border-color: #4aaaa5;
   border-width: 2px;
   padding: 1px;
-  background: #dddddd
+  margin: 1px;
+  background: #ffffff;
+  background-image: url("../images/concrete_seamless.png");
+  position: relative;
 }
 
 header {
@@ -14,6 +17,11 @@ header {
     margin-bottom: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
+  }
+
+  a {
+    text-decoration: none;
+    color: #777777;
   }
   .nav-header-content {
     width: 960px;
@@ -70,7 +78,9 @@ header {
     width: 914px;
     padding: 5px 20px 20px 20px;
     color: #777777;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
   }
 
   #about-me {
@@ -89,18 +99,16 @@ header {
   footer {
     text-align: center;
     background: #666666;
-    position: relative;
     width: 100%;
     height: 70px;
     margin-top: 50px;
-    position:  relative;
     border-top: 5px solid #4aaaa5;
 
   }
 
   #copyright {
     position: absolute;
-    bottom: 0px;
+    bottom: 5px;
     display: inline-block;
     color: white;
 }
@@ -109,4 +117,64 @@ img {
   float: left;
   margin: 25px 20px 10px 0px;
   vertical-align: text-top;
+}
+
+#contact-form-content {
+  margin-bottom: 220px;
+}
+
+.contact-form {
+  margin: 20px 0px 3px 0px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.one-line-input {
+  width: 100%;
+  margin: 5px 0px 15px 0px;
+}
+
+.multi-line-input {
+  width: 100%;
+  padding: 0px 0px 200px 0px;
+  margin: 5px 0px 12px 0px;
+  overflow: scroll;
+
+}
+
+.button {
+  background: #4aaaa5;
+  color: white;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
+  padding:  10px 32px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  width: 0;
+  margin-bottom: 10px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.porfolio-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 45px;
+  background-color: #4aaaa5;
+  float: left;
+  position: absolute;
+  bottom: 18px;
+}
+
+.div-label {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #ffffff;
+  display: inline-block;
 }
